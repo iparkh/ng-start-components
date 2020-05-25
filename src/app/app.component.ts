@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Post } from './components/post-list/post-list.component';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ngStartComponents';
+   
+  addpost:Post
+
+  updatePosts(post:Post){
+    // console.log('addPost(post)')
+    // console.log(post)
+    this.addpost=post
+  }
 }

@@ -1,0 +1,16 @@
+<div>
+    <h3>Форма введення даних</h3>
+    <input type="text" 
+           class="form-control" 
+           placeholder="Заголовок"
+           [(ngModel)]="title"
+           #titleInput
+           name="" id="" />
+    <input type="text" 
+           class="form-control" 
+           placeholder="Текст"
+           [(ngModel)]="text"
+           name="" id="" />
+     <button class="btn" (click)="addPost()">Додати пост</button>
+     <button class="btn" (click)="focusTitle()">Фокус title</button>
+</div>

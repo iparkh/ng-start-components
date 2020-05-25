@@ -1,0 +1,8 @@
+<h3>Пости</h3>
+<app-post-item 
+    *ngFor="let item of posts;idx index "
+    [post]="item"
+    (onRemove)="removePost($event)"
+    > aaa
+</app-post-item>
+
